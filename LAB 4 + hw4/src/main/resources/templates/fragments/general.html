@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+</head>
+<body>
+<div th:fragment="top">
+  <div class="header">
+    <img th:src="@{/images/companyLogo.jpg}" width="100px" />
+    <span class="header-text">COMPANY NAME</span>
+  </div>
+  <nav>
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/products}">Products</a>
+    <a th:href="@{/admin}">Admin</a>
+    <a th:href="@{/cart}">Cart</a>
+    <a th:href="@{/logout}">Logout</a>
+  </nav>
+</div>
+</body>
+</html>

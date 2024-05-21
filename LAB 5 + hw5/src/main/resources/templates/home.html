@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css"/>
+    <script th:src="@{/js/home.js}" defer></script>
+    <title>See products</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+<div class="header">
+    <img  th:src="@{/images/companyLogo.jpg}" width="100px"  />
+    <span class="header-text">COMPANY NAME</span>
+</div>
+<h2>Add product:</h2>
+<input type="text" id="productName" placeholder="Product Name">
+<input type="number" id="productPrice" placeholder="Product Price">
+<button id="addProductButton">Add Product</button>
+
+<h2>Delete product:</h2>
+<select id="deleteProductId">
+    <option disabled selected value="">Select an option</option>
+</select>
+<button id="deleteProductButton">Delete Product</button>
+
+<h2>Modify product:</h2>
+<select id="modifyProductId">
+    <option disabled selected value="">Select an option</option>
+</select>
+<input type="text" id="modifyProductName" placeholder="New Product Name">
+<input type="number" id="modifyProductPrice" placeholder="New Product Price">
+<button id="modifyProductButton">Modify Product</button>
+
+<h2>Selected Product Properties:</h2>
+<div id="productProperties"></div>
+
+<h2>Product list:</h2>
+<div id="products"></div>
+</body>
+</html>
